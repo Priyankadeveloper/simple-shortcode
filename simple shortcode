@@ -1,1 +1,10 @@
 # simple-shortcode
+function foobar_func( $atts ){
+  $html = '<div class="pageswidgets testingsxx">';
+  $html .= dynamic_sidebar('footer-3'); 
+  $html.="</div>";
+  return $html;
+}
+add_shortcode( 'foobar', 'foobar_func' );
+
+
